@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,15 +26,15 @@
                 <h2>Choose: Rock, Paper or Scissors.</h2>
             </div>
             <div class="game-buttons">
-                <ul><button class="button-style">Rock</button></ul>
-                <ul><button class="button-style">Paper</button></ul>
-                <ul><button class="button-style">Scissors</button></ul>
+                <ul><button class="button-style" id="rock" onclick="userInput('rock')">Rock</button></ul>
+                <ul><button class="button-style" id="paper" onclick="userInput('paper')">Paper</button></ul>
+                <ul><button class="button-style" id="scissors" onclick="userInput('scissors')">Scissors</button></ul>
             </div>
 
             <div class="game-display">
                 <div class="results">
-                    <ul class="choice-ui" id="user-choice"><img src=""></ul>
-                    <ul class="choice-ui" id="op-choice"><img src=""></ul>
+                    <ul class="choice-ui"><img id="user-choice" src=""></ul>
+                    <ul class="choice-ui"><img id="op-choice" src=""></ul>
                 </div>
             </div>
 
