@@ -17,6 +17,7 @@ function userInput(choice) {
 
 function getComputerValue() {
   const randomIndex = Math.floor(Math.random() * choices.length);
+  console.log(`New Computer Choice: ${choices[randomIndex]}`);
   return choices[randomIndex]; // Return the computer's choice
 }
 
