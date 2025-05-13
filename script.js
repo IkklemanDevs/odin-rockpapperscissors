@@ -2,7 +2,25 @@ console.log("Ready for Rock, Paper, Scissors?");
 
 const choices = ["rock", "paper", "scissors"];
 
+window.onload = function() {
+  scoreCounter();
+};
+
+function scoreCounter() {
+  
+  let userScore = 0;
+  let opScore = 0;
+
+  const userScoreLocation = document.getElementById("user-score");
+  const opScoreLocation = document.getElementById("op-score");
+
+  userScoreLocation.innerText = userScore;
+  opScoreLocation.innerText = opScore;
+
+}
+
 function userInput(choice) {
+
   console.log(choice);
 
   const userImage = document.getElementById("user-choice");
@@ -27,10 +45,14 @@ function displayOpImage(computerChoice) { // Accept computerChoice as an argumen
   if (opImage) {
     opImage.src = `assets/${computerChoice}.png`; // set image source using the provided choice
   } else {
-    console.error("Image element with id 'op-choice' not found.");
+    
   }
 
   return computerChoice;
+}
+
+function gameLogic (){
+    
 }
 
 // The initial call should now get the value and then display it
